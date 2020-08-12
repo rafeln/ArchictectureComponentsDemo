@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Architecture Components</string>
+    <string name="cancel">Cancel</string>
+    <string name="detail">Detail</string>
+    <string name="error">Error</string>
+    <string name="github">GitHub</string>
+    <string name="github_users">GitHub Users</string>
+    <string name="loading">Loading</string>
+    <string name="no_data">No Data</string>
+    <string name="no_internet">Please check your internet connection or try again later</string>
+    <string name="ok">Ok</string>
+    <string name="repository">Repository</string>
+    <string name="server_error">Server Error, please try again later</string>
+    <string name="user">User</string>
+</resources>

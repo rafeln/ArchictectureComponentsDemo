@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.example.architecturecomponents.view.fragments.MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_main_fragment_to_main_detail_fragment"
+            app:destination="@id/fragment_main_detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_main_detail"
+        android:name="com.example.architecturecomponents.view.fragments.MainDetailFragment"
+        android:label="@string/detail"
+        tools:layout="@layout/fragment_main_detail">
+        <argument
+            android:name="user"
+            app:argType="com.example.architecturecomponents.model.bo.User" />
+    </fragment>
+
+</navigation>
